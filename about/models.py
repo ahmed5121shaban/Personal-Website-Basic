@@ -3,7 +3,7 @@ from django.db import models
 # Create your models here.
 class About(models.Model):
     about_name = models.CharField(max_length=100)
-    about_me = models.CharField(max_length=10000)
+    about_me = models.TextField(max_length=10000)
     imag = models.ImageField(upload_to='about/%y/%m/%d')
     subtitle = models.TextField(max_length=500)
     tw_link = models.URLField()
